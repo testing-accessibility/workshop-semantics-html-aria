@@ -4,7 +4,7 @@
   <a href="https://testingaccessibility.com">
     <img
       alt="Testing Accessibility: Semantic HTML & ARIA by Marcy Sutton"
-      src="./ta-promo-image.png"
+      src="./ta-promo-image-semantics.png"
     />
   </a>
 
