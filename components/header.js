@@ -9,7 +9,7 @@ const Header = () => {
         <header id="header">
             <div id="header-nav">
                 <div id="header-logo">
-                    <a href="/workshop3-semantics-aria/" className="header-main-item">
+                    <a href="/" className="header-main-item">
                         <span className="logo-img">
                             <img src={CampSpotsLogo} alt="" />
                         </span>
