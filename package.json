@@ -43,6 +43,7 @@
     "@babel/preset-react": "^7.16.0",
     "@emotion/babel-plugin": "^11.3.0",
     "@parcel/resolver-glob": "^2.0.1",
+    "@parcel/transformer-raw": "^2.5.0",
     "@parcel/transformer-sass": "^2.0.1",
     "@parcel/transformer-svg-react": "^2.0.1",
     "axe-core": "^4.3.5",

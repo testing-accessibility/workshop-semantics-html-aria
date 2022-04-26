@@ -6,28 +6,28 @@
                 "url": "/listings",
                 "name": "Find a camping spot"
             }, {
-                "url": "#",
+                "url": "/events",
                 "name": "Events"
             }, {
-                "url": "#",
+                "url": "/passes",
                 "name": "Passes"
             }, {
-                "url": "#",
-                "name": "Trip"
+                "url": "/trip-ideas",
+                "name": "Trip Ideas"
             }]
         }, {
             "headerText": "Trip Types",
             "items": [{
-                "url": "#",
+                "url": "/trip-ideas#tent-camping",
                 "name": "Tent camping"
             }, {
-                "url": "#",
+                "url": "/trip-ideas#yurt-camping",
                 "name": "Yurt camping"
             }, {
-                "url": "#",
+                "url": "/trip-ideas#van-camping",
                 "name": "Van camping"
             }, {
-                "url": "#",
+                "url": "/trip-ideas#luxury-camping",
                 "name": "Luxury camping"
             }]
         }], 
@@ -35,7 +35,7 @@
             "linkText": "All sites",
             "imgSrc": "driving-map.jpg",
             "iconSrc": "icon-nav-map.svg",
-            "url": "#"
+            "url": "/listings"
         }, {
             "linkText": "RV parks",
             "imgSrc": "rv-parks.jpg",
@@ -47,29 +47,26 @@
         "linkGroups": [{
             "headerText": "Trip Types",
             "items": [{
-                "url": "#",
+                "url": "/trip-ideas#tent-camping",
                 "name": "Tent camping"
             }, {
-                "url": "#",
+                "url": "/trip-ideas#yurt-camping",
                 "name": "Yurt camping"
             }, {
-                "url": "#",
+                "url": "/trip-ideas#van-camping",
                 "name": "Van camping"
             }, {
-                "url": "#",
+                "url": "/trip-ideas#luxury-camping",
                 "name": "Luxury camping"
             }]
         }, {
             "headerText": "You don’t have to be alone",
             "items": [{
-                "url": "#",
+                "url": "/events",
                 "name": "Events"
             }, {
                 "url": "#",
                 "name": "Local Communities"
-            }, {
-                "url": "#",
-                "name": "Feedback"
             }]
         }]
     },
@@ -77,7 +74,7 @@
         "linkGroups": [{
             "headerText": "Adventure Ideas",
             "items": [{
-                "url": "#",
+                "url": "/adventures-hikes",
                 "name": "Hikes"
             }, {
                 "url": "#",
@@ -95,11 +92,17 @@
                 "url": "/about",
                 "name": "About CampSpots"
             }, {
-                "url": "#",
+                "url": "/careers",
                 "name": "Careers"
             }, {
                 "url": "#",
                 "name": "Accessibility"
+            }]
+        }, {
+            "headerText": "Contribute",
+            "items": [{
+                "url": "/submit-listing",
+                "name": "Submit Your Spot"
             }]
         }]
     }
