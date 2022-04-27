@@ -4,7 +4,7 @@ import {Helmet} from "react-helmet"
 
 import HeaderPortal from "components/header-portal"
 import "components/styles/page-events.scss"
-import video from "/images/camping-reel.mp4"
+import video from "images/camping-reel.mp4"
 
 const EventsPage = () => {
 
