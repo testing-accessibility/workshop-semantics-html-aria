@@ -18,7 +18,7 @@ The application already has dynamic routing set up for each of the campgrounds l
 `data/listings.json`. You can get to the campground listings from "Plan Your Trip >
 Find a Camping Spot" in the main navigation, and the individual listing details from there.
 
-Or visit the before and after pages by URL:
+Visit the before and after pages by URL:
 
-- http://localhost:1234/workshop3-semantics-aria/listing/listing-cranberry-lake
-- http://localhost:1234/workshop3-semantics-aria/exercise1/listing-cranberry-lake
+- http://localhost:1234/listing/listing-cranberry-lake
+- http://localhost:1234/exercise1/listing-cranberry-lake

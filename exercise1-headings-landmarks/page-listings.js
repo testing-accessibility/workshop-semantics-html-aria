@@ -7,17 +7,20 @@ import "components/styles/page-listings.scss"
 
 import HeaderPortal from "components/header-portal"
 import ListingsData from "data/listings.json"
-import ListingExcerpt from "components/listing-excerpt"
+import ListingExcerpt from "./listing-excerpt"
 import DropdownList from "components/dropdown-list"
 
 import * as imageURLs from "../images/listings/*.{png,jpg}"
 
-const ListingsPage = () =>  {
+const Exercise1ListingsPage = () =>  {
     return (
         <BodyClassName className="page-listings">
             <>
+                <HeaderPortal>
+                    <h1 className="visually-hidden">Camp Spots</h1>
+                </HeaderPortal>
                 <div className="wide-layout listings-header">
-                    <h1>Listings</h1>
+                    <h2>Listings</h2>
                     <DropdownList defaultItemText="All site types" items={["Campgrounds", "State Parks", "Tent sites", "National Parks"]} />
                 </div>
                 <div className="listings-list">
@@ -37,4 +40,4 @@ const ListingsPage = () =>  {
     )
 }
 
-export default ListingsPage
+export default Exercise1ListingsPage

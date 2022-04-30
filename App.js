@@ -13,7 +13,8 @@ import EventsPage from "components/page-events"
 import PassesPage from "components/page-passes"
 import SubmitListingPage from "components/page-submit-listing"
 import HikesPage from "components/page-adventures-hikes"
-import SemanticsExercise from "./exercise1-headings-landmarks/page-listing-detail"
+import Exercise1ListingsPage from "./exercise1-headings-landmarks/page-listings"
+import Exercise1ListingPage from "./exercise1-headings-landmarks/page-listing-detail"
 import ARIAExercise from "./exercise2-what-is-aria/page-listing-detail"
 import A11yNamingExercise from "./exercise3-accessible-names/page-listing-detail"
 import A11yNamingExerciseListings from "./exercise3-accessible-names/page-listings"
@@ -36,7 +37,8 @@ export function App() {
 				<PassesPage path="/passes" />
 				<HikesPage path="/adventures-hikes" />
 				<TripIdeasPage path="/trip-ideas" />
-				<SemanticsExercise path="/exercise1/:id" />
+				<Exercise1ListingsPage path="/exercise1/listings" />
+				<Exercise1ListingPage path="/exercise1/:id" />
 				<ARIAExercise path="/exercise2/:id" />
 				<A11yNamingExercise path="/exercise3/:id" />
 				<A11yNamingExerciseListings path="/exercise3/listings" />

@@ -11,9 +11,9 @@ import Icon from "components/icon"
 import ListingsData from "data/listings.json"
 import DatePicker from "components/date-picker/date-picker"
 
-import * as imageURLs from "../../images/listings/*.{png,jpg}"
+import * as imageURLs from "../images/listings/*.{png,jpg}"
 
-const SemanticsExercise = props => {
+const Exercise1ListingPage = props => {
     const data = ListingsData.listings[props.id]
     const headerImageUrl = LoadedImageUrl(imageURLs, data.detailHeaderImageSrc)
     return (
@@ -69,4 +69,4 @@ const SemanticsExercise = props => {
     )
 }
 
-export default SemanticsExercise
+export default Exercise1ListingPage

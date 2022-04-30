@@ -2,9 +2,9 @@ import React from "react"
 import BodyClassName from "react-body-classname"
 import sanitizeHtml from "sanitize-html"
 import {Helmet} from "react-helmet"
-import LoadedImageUrl from "./utils/loaded-image-url"
+import LoadedImageUrl from "components/utils/loaded-image-url"
 
-import "./styles/page-listings.scss"
+import "components/styles/page-listings.scss"
 
 import Icon from "components/icon"
 import ListingsData from "data/listings.json"

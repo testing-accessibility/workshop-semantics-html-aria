@@ -5,17 +5,17 @@ import { Link } from "@reach/router"
 import Icon from "components/icon"
 import "components/styles/listing.scss"
 
-const ListingExcerpt = ({id, data, image}) => {
+const Exercise1ListingExcerpt = ({id, data, image}) => {
     const { listingName = '', location = '', listingType = '', excerpt = '', amenities = [] } = data
     return (
-        <div className="listing-excerpt">
-            <Link to={`/listing/${id}`}>
+        <article className="listing-excerpt">
+            <Link to={`/exercise1/${id}`}>
                 <img src={image} alt={listingName} />
             </Link>
             <div>
-                <div className="header">
+                <header>
                     <div>
-                        <h1>{listingName}</h1>
+                        <h3>{listingName}</h3>
                         <p>{location} • {listingType}</p>
                     </div>
                     <ul className="amenity-icons">
@@ -25,17 +25,17 @@ const ListingExcerpt = ({id, data, image}) => {
                             </li>
                         })}
                     </ul>
-                </div>
+                </header>
                 <div>
                     <p>{excerpt}</p>
-                    <p><Link to={`/listing/${id}`} aria-label={`Read more about ${listingName}`}>Read more</Link></p>
+                    <p><Link to={`/exercise1/${id}`} aria-label={`Read more about ${listingName}`}>Read more</Link></p>
                 </div>
             </div>
-        </div>    
+        </article>    
     )
 }
 
-ListingExcerpt.propTypes = {
+Exercise1ListingExcerpt.propTypes = {
     id: PropTypes.string,
     data: PropTypes.shape({
         listingName: PropTypes.string,
@@ -48,4 +48,4 @@ ListingExcerpt.propTypes = {
     image: PropTypes.string
 }
 
-export default ListingExcerpt
+export default Exercise1ListingExcerpt

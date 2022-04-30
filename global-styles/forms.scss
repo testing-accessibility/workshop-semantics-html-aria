@@ -1,0 +1,97 @@
+
+/* Forms */
+.form-field {
+    position: relative;
+}
+.form-field .label,
+.form-field label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.form-field span[class^="icon"] {
+    background-color: #333;
+    display: block;
+    height: 1em;
+    width: 1em;
+}
+.form-field .custom-input span[class^="icon"] {
+    height: 2em;
+    margin: 1rem 0 0 0.5em;
+    position: absolute;
+}
+.form-field span.icon-lookingglass {
+    background: url(/images/icons/icon-lookingglass.svg) no-repeat;
+}
+.form-field span.icon-lookingglass-white {
+    background: url(/images/icons/icon-lookingglass-white.svg) no-repeat;
+}
+.form-field button.btn-submit span.icon-lookingglass-white {
+    background-size: contain;
+}
+.form-field span.icon-calendar {
+    background: url(/images/icons/icon-calendar.svg) no-repeat;
+}
+.form-field input,
+.form-field textarea {
+    box-sizing: border-box;
+    background-color: var(--bgcolor-input);
+    border-color: var(--color-border-input);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: inherit;
+    line-height: 2;
+    width: 100%;
+    -webkit-appearance: none;
+}
+.form-field input {
+    height: 3rem;
+    padding-left: 3em;
+}
+.form-field textarea {
+    height: 10em;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+}
+.form-submit [class^='btn-'] {
+    background-color: var(--color-accent-dark);
+    border-radius: 5px;
+    color: var(--color-primary-light);
+    display: inline-block;
+    font-weight: bold;
+    height: 3rem;
+    line-height: 1;
+    padding: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 3em;
+}
+.form-submit [class^='btn-']:hover {
+    cursor: pointer;
+}
+.form-submit .btn-send {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 1rem;
+    width: 6em;
+}
+.form-submit .btn-lookingglass svg {
+    display: inline-block;
+}
+.form-submit .btn-lookingglass svg path {
+    fill: var(--color-primary-light);
+}
+.form-submit .icon-arrow {
+    background: transparent url(/images/icons/icon-right-arrow.svg) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 0.75em;
+    transition: all 0.25s ease-in-out;
+    width: 1em;
+}
+.form-submit .btn-send:hover .icon-arrow {
+    transform: translateX(4px);
+}
