@@ -15,10 +15,10 @@ import SubmitListingPage from "components/page-submit-listing"
 import HikesPage from "components/page-adventures-hikes"
 import Exercise1ListingsPage from "./exercise1-headings-landmarks/page-listings"
 import Exercise1ListingPage from "./exercise1-headings-landmarks/page-listing-detail"
-import ARIAExercise from "./exercise2-what-is-aria/page-listing-detail"
-import A11yNamingExercise from "./exercise3-accessible-names/page-listing-detail"
-import A11yNamingExerciseListings from "./exercise3-accessible-names/page-listings"
-import ProgrammaticA11yExercise from "./exercise4-programmatic-a11y-info/page-listing-detail"
+import Exercise2ARIAListingPage from "./exercise2-what-is-aria/page-listing-detail"
+import Exercise3NamesListingPage from "./exercise3-accessible-names/page-listing-detail"
+import Exercise3NamesListingsPage from "./exercise3-accessible-names/page-listings"
+import Exercise4A11yInfoListingPage from "./exercise4-programmatic-a11y-info/page-listing-detail"
 
 import imgFooterLogo from "images/icons/footer-logo.svg"
 
@@ -39,10 +39,10 @@ export function App() {
 				<TripIdeasPage path="/trip-ideas" />
 				<Exercise1ListingsPage path="/exercise1/listings" />
 				<Exercise1ListingPage path="/exercise1/:id" />
-				<ARIAExercise path="/exercise2/:id" />
-				<A11yNamingExercise path="/exercise3/:id" />
-				<A11yNamingExerciseListings path="/exercise3/listings" />
-				<ProgrammaticA11yExercise path="/exercise4/:id" />
+				<Exercise2ARIAListingPage path="/exercise2/:id" />
+				<Exercise3NamesListingPage path="/exercise3/:id" />
+				<Exercise3NamesListingsPage path="/exercise3/listings" />
+				<Exercise4A11yInfoListingPage path="/exercise4/:id" />
 			</Router>
 		</div>
 		<div id="footer">
