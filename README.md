@@ -103,6 +103,8 @@ yarn start
 This should start the site for your browser at the address indicated in your Terminal:
 `http://localhost:1234`
 
+You can also view a deployed version: https://workshop-semantics-html-aria.testingaccessibility.com/
+
 ## Working through the exercises
 
 In this workshop, we'll dig into specifics of an important aspect of accessibility: semantics and ARIA in HTML markup. The accessibility information plumbed through your pages and applications with semantic code is essential for users of assistive technology. It assists other use cases as well, such as voice navigation and SEO.

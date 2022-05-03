@@ -40,3 +40,8 @@ You can visit the before and after pages containing icon components by URL:
 - http://localhost:1234/listing/listing-cranberry-lake
 - http://localhost:1234/exercise3/listing-cranberry-lake
 - http://localhost:1234/exercise3/listings
+
+URL to view deployed versions for this exercise:
+
+- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise3/listings
+- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise3/listing-cranberry-lake

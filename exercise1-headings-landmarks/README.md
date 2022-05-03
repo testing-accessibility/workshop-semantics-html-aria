@@ -24,3 +24,8 @@ Visit the before and after pages by URL:
 - http://localhost:1234/exercise1/listings
 - http://localhost:1234/listing/listing-cranberry-lake
 - http://localhost:1234/exercise1/listing-cranberry-lake
+
+URL to view deployed versions for this exercise:
+
+- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise1/listings
+- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise1/listing-cranberry-lake

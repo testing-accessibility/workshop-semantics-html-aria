@@ -30,3 +30,7 @@ You can visit the before and after pages with the date picker by URL:
 
 - http://localhost:1234/listing/listing-cranberry-lake
 - http://localhost:1234/exercise4/listing-cranberry-lake
+
+URL to view deployed versions for this exercise:
+
+- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise4/listing-cranberry-lake
