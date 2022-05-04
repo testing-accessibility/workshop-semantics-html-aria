@@ -8,7 +8,7 @@ Use native HTML first, since it gives you more functionality for free. For examp
 start with a native `<h1>`, `<main>`, or `<ul>` element to get the best baseline
 of support in browsers and assistive technologies.
 
-## Exercise: Build the listing detail page template with semantics and heading structure
+## Exercise: Update the listing detail page template with semantics and heading structure
 
 Using the files in `exercise1-headings-landmarks`
 as a reference, adjust the markup in the Listings Page and Listing Detail template

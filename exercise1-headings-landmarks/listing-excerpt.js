@@ -31,7 +31,7 @@ const Exercise1ListingExcerpt = ({id, data, image}) => {
                     <p><Link to={`/exercise1/${id}`} aria-label={`Read more about ${listingName}`}>Read more</Link></p>
                 </div>
             </div>
-        </article>    
+        </article>
     )
 }
 
