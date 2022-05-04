@@ -15,24 +15,32 @@ Similarly, `title` attributes are technically exposed to assistive technology bu
 on mouse hover. That shouldn't be all that sighted users have to go on when trying to understand the
 purpose of your graphical elements. Use text labels with your icons, or at least make them configurable.
 
-## Exercise: Write an accessible name for an icon button in two ways
+## Exercise: Write accessible names for icons and buttons
 
-Using the `<Icon>` component, play with different approaches for exposing an accessible name.
-The goal is to add a name to the component that reflects the graphic icon inside.
+Play with different approaches for exposing accessible names on the Icon component and date picker
+controls. The goal is to add labels to the components that reflect the purpose of the elements.
 
-You can compare the "before" `icon.js` component with the completed one in `exercise3-accessible-names`.
+For the icon, you can compare the "before" `icon.js` component with the completed one in this directory.
 
-There are a few approaches for exposing a name for an icon:
+For the date picker buttons, compare the "before" `date-picker.js` component with the completed one.
 
-- If wrapped in a button, put an `aria-label` on the button itself
-- Put an `aria-label` on a graphical icon child element like an `img` or a `span[role=img]`
-- Use a `.visually-hidden` span or other child element with `textContent` inside
-(source in [`styles.scss`](https://github.com/marcysutton/testing-accessibility-demos/blob/main/workshop3-semantics-aria/styles.scss#L4))
+There numerous few approaches for exposing an accessible name:
 
-There are even more options when the icon is SVG. If the element provides rich content, it can
-contain text that is exposed as a name. If the SVG is essentially an image, you can use the same
-graphical image approach as above. Or you can decide to mark the SVG with `role=presentation` and
-let the wrapping button element provide a name somehow.
+- If wrapped in a button:
+  - Put an `aria-label` on the button itself (`<button aria-label>`)
+  - Put an `aria-label` on a child element, like `<button><span role="img" aria-label></span></button>`
+  - Use [`.visually-hidden`](https://github.com/marcysutton/testing-accessibility-demos/blob/main/workshop3-semantics-aria/styles.scss#L4) on a child element with `textContent` inside, like
+  `<button><span class="visually-hidden">Text</span></button>`
+
+- There are even more options with SVG:
+  - Use the same graphical image approach as above with `<svg role="img" aria-label></svg>`
+  - Use an SVG title: `<svg><title>Text</title></svg>`
+  - SVG text can also be exposed: `<svg><text /></svg>`
+  - Or you can mark the SVG with `role=presentation` and let a wrapping button provide a name.
+
+Be sure to test your changes in the browser with VoiceOver and/or NVDA, using
+the arrow keys to navigate both interactive and static content as well as Tab for
+interactive controls.
 
 You can visit the before and after pages containing icon components by URL:
 
