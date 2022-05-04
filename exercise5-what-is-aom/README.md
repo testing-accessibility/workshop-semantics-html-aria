@@ -15,19 +15,17 @@ concerns around event tracking of screen readers.
 View what can currently be used in Chrome, Firefox, or Safari:
 https://github.com/WICG/aom/blob/gh-pages/caniuse.md
 
-## How to enable AOM
-
-### Chrome
+## Enabling AOM in Chrome
 
 For web platform related features: Browse to `chrome://flags`, enable `enable-experimental-web-platform-features`.
 
-### Firefox
+## Enabling AOM in Firefox
 
 `about:config accessibility.AOM.enabled = true`
 
-## Exercise: Inspect current ARIA information on a component and theorize where AOM could be helpful
+## Usage
 
-In Chrome or Safari, inspect accessibility information using the JavaScript console:
+In a supporting browser, inspect accessibility information using the JavaScript console:
 
 ```javascript
 const element = document.querySelector('.some-icon-button')
@@ -41,3 +39,15 @@ Set attributes to override the page markup and see how it is reflected in the DO
 element.role = 'button'
 console.log(element.role)
 ```
+
+## Exercise: Play with ariaCurrent property vs. attribute for site navigation
+
+In the `header.js` and `meganav/subnav-link-group.js` components, experiment with adding aria-current
+in two ways using `document.location.pathname`.
+
+- Add the `ariaCurrent` property to mark the logo link as current when matching. This will require
+using a React ref and React.useEffect.
+- Add the `aria-current` attribute to subnav links when they match
+
+You can compare the "before" versions of `header.js` and `meganav/subnav-link-group.js` with the
+versions in this directory.
