@@ -8,12 +8,12 @@ as opposed to the current approach of applying accessibility information with HT
 makers use these community-grown standards approaches to inform what they build into their technologies. The AOM repo can be found here: https://github.com/WICG/aom
 
 As developers and technologists, it's helpful to know what is being discussed and on the horizon.
-It should also be understood that AOM is an experimental, future technology currently
-with limited use. Parts of the proposals have also met some valid resistance due to privacy
-concerns around event tracking of screen readers.
+It should also be understood that AOM is an experimental, future technology currently with limited use.
 
 View what can currently be used in Chrome, Firefox, or Safari:
 https://github.com/WICG/aom/blob/gh-pages/caniuse.md
+
+Some proposals are blocked by questions surrounding architectural features that allow detectability of Assistive Tech, such as virtual nodes for custom `<canvas>` accessibility and a cross-browser accessibility tree and associated JavaScript APIs. Here's an open issue to follow: https://github.com/w3ctag/design-principles/issues/293
 
 ## Enabling AOM in Chrome
 
@@ -22,6 +22,7 @@ For web platform related features: Browse to `chrome://flags`, enable `enable-ex
 ## Enabling AOM in Firefox
 
 `about:config accessibility.AOM.enabled = true`
+`about:config accessibility.ARIAReflection.enabled = true`
 
 ## Usage
 
