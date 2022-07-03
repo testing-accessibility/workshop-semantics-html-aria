@@ -104,7 +104,7 @@ const DatePicker = ({monthsInAdvance = 2, currDate}) => {
                             `${dayjs(day.date).format('MMMM D')}${day.isBooked ? ' already booked' : '' }${isDaySelected(day) ? ' selected' : ''}`
                         }
                         aria-disabled={day.isBooked ? 'true' : 'false'}
-                        aria-selected={
+                        aria-pressed={
                             isDaySelected(day) ? 'true' : 'false' 
                         }
                         className={[
