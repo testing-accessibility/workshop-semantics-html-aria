@@ -33,4 +33,4 @@ You can visit the before and after pages with the date picker by URL:
 
 URL to view deployed versions for this exercise:
 
-- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise4/listing-cranberry-lake
+- https://workshop-semantics-html-aria.testingaccessibility.com/exercise4/listing-cranberry-lake

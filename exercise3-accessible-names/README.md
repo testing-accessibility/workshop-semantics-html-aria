@@ -51,5 +51,5 @@ You can visit the before and after pages containing icon components by URL:
 
 URL to view deployed versions for this exercise:
 
-- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise3/listings
-- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise3/listing-cranberry-lake
+- https://workshop-semantics-html-aria.testingaccessibility.com/exercise3/listings
+- https://workshop-semantics-html-aria.testingaccessibility.com/exercise3/listing-cranberry-lake

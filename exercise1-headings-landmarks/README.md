@@ -27,5 +27,5 @@ Visit the before and after pages by URL:
 
 URL to view deployed versions for this exercise:
 
-- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise1/listings
-- https://workshop-manual-a11y-testing.testingaccessibility.com/exercise1/listing-cranberry-lake
+- https://workshop-semantics-html-aria.testingaccessibility.com/exercise1/listings
+- https://workshop-semantics-html-aria.testingaccessibility.com/exercise1/listing-cranberry-lake
