@@ -21,36 +21,39 @@ import Exercise3NamesListingsPage from "./exercise3-accessible-names/page-listin
 import Exercise4A11yInfoListingPage from "./exercise4-programmatic-a11y-info/page-listing-detail"
 
 import imgFooterLogo from "images/icons/footer-logo.svg"
+import { MainHeadingContextProvider } from "./components/main-heading-context"
 
 export function App() {
-	return <>
-		<Header />
-		<div id="main">
-			<Router>
-				<HomePage path="/" />
-				<AboutPage path="/about" />
-				<CareersPage path="/careers" />
-				<ListingsPage path="/listings" />
-				<Listing path="/listing/:id" />
-				<SubmitListingPage path="/submit-listing" />
-				<EventsPage path="/events" />
-				<PassesPage path="/passes" />
-				<HikesPage path="/adventures-hikes" />
-				<TripIdeasPage path="/trip-ideas" />
-				<Exercise1ListingsPage path="/exercise1/listings" />
-				<Exercise1ListingPage path="/exercise1/:id" />
-				<Exercise2ARIAListingPage path="/exercise2/:id" />
-				<Exercise3NamesListingPage path="/exercise3/:id" />
-				<Exercise3NamesListingsPage path="/exercise3/listings" />
-				<Exercise4A11yInfoListingPage path="/exercise4/:id" />
-			</Router>
-		</div>
-		<div id="footer">
-			<div className="layout">
-				<div id="footer-logo">
-					<img src={imgFooterLogo} alt="CampSpots" />
+	return (
+		<MainHeadingContextProvider>
+			<Header />
+			<div id="main">
+				<Router>
+					<HomePage path="/" />
+					<AboutPage path="/about" />
+					<CareersPage path="/careers" />
+					<ListingsPage path="/listings" />
+					<Listing path="/listing/:id" />
+					<SubmitListingPage path="/submit-listing" />
+					<EventsPage path="/events" />
+					<PassesPage path="/passes" />
+					<HikesPage path="/adventures-hikes" />
+					<TripIdeasPage path="/trip-ideas" />
+					<Exercise1ListingsPage path="/exercise1/listings" />
+					<Exercise1ListingPage path="/exercise1/:id" />
+					<Exercise2ARIAListingPage path="/exercise2/:id" />
+					<Exercise3NamesListingPage path="/exercise3/:id" />
+					<Exercise3NamesListingsPage path="/exercise3/listings" />
+					<Exercise4A11yInfoListingPage path="/exercise4/:id" />
+				</Router>
+			</div>
+			<div id="footer">
+				<div className="layout">
+					<div id="footer-logo">
+						<img src={imgFooterLogo} alt="CampSpots" />
+					</div>
 				</div>
 			</div>
-		</div>
-	</>
+		</MainHeadingContextProvider>
+	)
 }
