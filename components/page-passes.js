@@ -9,8 +9,11 @@ import iconProPlan from "images/icons/icon-proplan.svg"
 import iconCreditCard from "images/icons/icon-credit-card.svg"
 import iconPayPal from "images/icons/paypal-inactive-dark.svg"
 import iconCreditCardTypes from "images/icons/credit-card-icons.png"
+import { useMainHeading } from "./main-heading-context"
 
 const PassesPage = () => {
+    useMainHeading('Classes')
+
     const closeBtnRef = useRef(null)
     const customAmtRadio = useRef(null)
 
@@ -30,9 +33,6 @@ const PassesPage = () => {
     return (
         <BodyClassName className="page-plans">
             <>
-                <HeaderPortal>
-                    <h1 className="visually-hidden">CampSpots</h1>
-                </HeaderPortal>
                 <section className="layout-centered">
                     <header className="page-header">
                         <div className="page-header-content layout">

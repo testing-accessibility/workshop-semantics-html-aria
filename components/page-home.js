@@ -9,14 +9,13 @@ import imgTents from "images/tents.jpg"
 import iconTag from "images/icons/icon-treetag.svg"
 import iconBackpack from "images/icons/icon-backpack.svg"
 import iconKayak from "images/icons/icon-kayak.svg"
+import { useMainHeading } from "./main-heading-context"
 
 const HomePage = () => {
+    useMainHeading('Homepage')
     return (
         <BodyClassName className="page-home">
             <>
-                <HeaderPortal>
-                    <h1 className="visually-hidden">Camp Spots</h1>
-                </HeaderPortal>
                 <SearchForm />
                 <section aria-label="Site information">
                     <div className="wide-layout two-part-overlap">

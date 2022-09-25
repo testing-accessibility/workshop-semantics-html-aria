@@ -11,14 +11,14 @@ import ListingExcerpt from "./listing-excerpt"
 import DropdownList from "components/dropdown-list"
 
 import * as imageURLs from "../images/listings/*.{png,jpg}"
+import { useMainHeading } from "../components/main-heading-context"
 
 const Exercise3NamesListingsPage = () =>  {
+    useMainHeading('Listings')
+
     return (
         <BodyClassName className="page-listings">
             <>
-                <HeaderPortal>
-                    <h1 className="visually-hidden">Camp Spots</h1>
-                </HeaderPortal>
                 <div className="wide-layout listings-header">
                     <h2>Listings</h2>
                     <DropdownList defaultItemText="All site types" items={["Campgrounds", "State Parks", "Tent sites", "National Parks"]} />

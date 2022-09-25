@@ -4,14 +4,13 @@ import {Helmet} from "react-helmet"
 import HeaderPortal from "components/header-portal"
 
 import "components/styles/page-submit-listing.scss"
+import { useMainHeading } from "./main-heading-context"
 
 const SubmitListingPage = () => {
+    useMainHeading('Submit your spot')
     return (
         <BodyClassName className="header-overlap page-submit-listing">
             <>
-                <HeaderPortal>
-                    <h1 className="visually-hidden">CampSpots</h1>
-                </HeaderPortal>
                 <section aria-labelledby="heading-1">
                     <header className="page-header">
                         <div className="page-header-content layout">

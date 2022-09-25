@@ -4,8 +4,11 @@ import {Helmet} from "react-helmet"
 
 import HeaderPortal from "components/header-portal"
 import "components/styles/page-careers.scss"
+import { useMainHeading } from "./main-heading-context"
 
 const CareersPage = () => {
+    useMainHeading('Work with Us')
+
     const closeBtnRef = useRef(null)
     const customAmtRadio = useRef(null)
 
@@ -25,9 +28,6 @@ const CareersPage = () => {
     return (
         <BodyClassName className="header-overlap page-careers">
             <>
-                <HeaderPortal>
-                    <h1 className="visually-hidden">CampSpots</h1>
-                </HeaderPortal>
                 <header className="page-header">
                     <div className="page-header-content layout">
                         <h2 className="primary-heading h1-style">Work With Us</h2>
