@@ -7,8 +7,11 @@ import Slideshow from "components/slideshow/slideshow"
 
 import "components/styles/page-adventure-ideas.scss"
 import * as imageURLs from "../images/adventure-ideas/hikes/*.{png,jpg}"
+import { useMainHeading } from "./main-heading-context"
 
 const HikesPage = () => {
+    useMainHeading('CampSpots - Adventure Ideas: Hikes')
+
     const images = [{
         "src": "img1.jpg",
         "alt": "",
@@ -28,24 +31,19 @@ const HikesPage = () => {
     }]
     return (
         <BodyClassName className="header-overlap page-adventure-ideas">
-            <>
-                <HeaderPortal>
-                    <h1 className="visually-hidden">CampSpots</h1>
-                </HeaderPortal>
-                <section aria-labelledby="heading-1">
-                    <header className="page-header">
-                        <div className="page-header-content layout">
-                            <h2 className="primary-heading h1-style" id="heading-1">Adventure Ideas: Hikes</h2>
-                        </div>
-                    </header>
-                    <article className="layout">
-                        <div className="inspiration-slideshow">
-                            <h3>Inspiration Gallery</h3>
-                            <Slideshow images={images} imageURLs={imageURLs} />
-                        </div>
-                    </article>
-                </section>
-            </>
+            <section aria-labelledby="heading-1">
+                <header className="page-header">
+                    <div className="page-header-content layout">
+                        <h2 className="primary-heading h1-style" id="heading-1">Adventure Ideas: Hikes</h2>
+                    </div>
+                </header>
+                <article className="layout">
+                    <div className="inspiration-slideshow">
+                        <h3>Inspiration Gallery</h3>
+                        <Slideshow images={images} imageURLs={imageURLs} />
+                    </div>
+                </article>
+            </section>
         </BodyClassName>
     )
 }
